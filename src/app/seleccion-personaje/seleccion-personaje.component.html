@@ -1,0 +1,21 @@
+<div class="viñeta">
+   
+    <button class="informacion">Informacion de {{ getEscuderia() }}</button>
+    <div class="num">{{personaje}}-{{ getEscuderia() }}</div>
+    
+    <div class="personaje">
+
+        <app-cartas-personajes [personaje]="personajes[personaje]"></app-cartas-personajes>
+
+        <!-- <div class="fernando1" *ngIf="personaje == 1"></div>
+        <div class="fernando2" *ngIf="personaje == 2"></div>
+        <div class="fernando3" *ngIf="personaje == 3"></div>
+        <div class="fernando4" *ngIf="personaje == 4"></div>
+        <div class="fernando5" *ngIf="personaje == 5"></div> -->
+    </div>
+
+    <div class="botones">
+    <button (click)="atras()" class="atras">Anterior</button>
+    <button (click)="elegir()" class="alante">Siguiente</button>
+    </div>
+</div>

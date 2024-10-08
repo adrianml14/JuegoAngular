@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+    background-image: url(https://soymotor.com/sites/default/files/styles/watermark_wide_960/public/imagenes/noticia/circuit-vueltas-solidarias-soymotor.jpg.webp?itok=38xQBry4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
