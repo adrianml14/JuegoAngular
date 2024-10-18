@@ -1,7 +1,15 @@
-<div class="carta">
-    <span *ngFor="let i of Circuito">
-
-    </span>
+<div class="contenedor-circuitos">
+    <div class="carta-circuito" *ngFor="let circuito of circuitos">
+        <div class="foto-circuito">
+            <img [src]="circuito.imagen" class="icono" alt="Imagen de {{ circuito.estadisticas }}">
+        </div>
+        <div class="informacion-circuito">
+            <h3 [innerHTML]="circuito.informacion"></h3>
+            <p [innerHTML]="circuito.estadisticas"></p> <!-- Información adicional -->
+        </div>
+    </div>
 </div>
+
+
 
 
