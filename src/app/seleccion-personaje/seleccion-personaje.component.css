@@ -4,9 +4,9 @@
     width: 80.5%;
     height: 67.5%;
     border-radius: 10px;
-    background-color: blueviolet;
+    background-color: rgba(137, 43, 226, 0);
     margin-left: 35.5px;
-    margin-top: 5px;
+    margin-top: 2px;
     border-color: black;
     border: solid;
 
@@ -18,10 +18,10 @@
     flex-direction: column;
     width: 400px;
     height: 620px;
-    background-color: rgba(43, 208, 226, 0.784);
+    background-color: rgba(43, 208, 226, 0);
     border-radius: 10px;
     margin-left: 35%;
-    margin-top: 3%;
+    margin-top: 2%;
 }
 .botones {
   display: flex;
@@ -33,7 +33,7 @@
 
 button {
   border-radius: 5px;
-  background-color: #cd5ce1a2;
+  background-color: rgba(172, 19, 98, 0.758);
   border: none;
   color: #fff;
   font-size: 25px;

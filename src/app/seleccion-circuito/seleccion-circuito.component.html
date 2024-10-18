@@ -1,11 +1,10 @@
 <div class="contenedor-circuitos">
     <div class="carta-circuito" *ngFor="let circuito of circuitos">
         <div class="foto-circuito">
-            <img [src]="circuito.imagen" class="icono" alt="Imagen de {{ circuito.estadisticas }}">
+            <img [src]="circuito.imagen" class="icono">
         </div>
         <div class="informacion-circuito">
-            <h3 [innerHTML]="circuito.informacion"></h3>
-            <p [innerHTML]="circuito.estadisticas"></p> <!-- Información adicional -->
+            <h3 [innerHTML]="circuito.informacion"></h3> 
         </div>
     </div>
 </div>
