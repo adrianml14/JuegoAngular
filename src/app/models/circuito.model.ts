@@ -40,7 +40,7 @@ constructor (id:number){
     } else  if(id==6){
         this.imagen="/assets/imagenes/monaco.jpg";
         this.informacion = "Ubicado en el Principado de Mónaco, el circuito abarca apenas 3,337 kilómetros (2,074 millas), lo que lo convierte en la pista más corta del calendario de Fórmula Uno. Sin embargo, lo que le falta en longitud lo compensa con creces con su intrincado diseño y su naturaleza desafiante. Con sus curvas cerradas, incluida la famosa curva cerrada y la sección del túnel de alta velocidad, los conductores deben poseer una habilidad y precisión excepcionales para recorrer el circuito con éxito.";
-        this.nombre ="<b>Monaco</b>";
+        this.nombre ="<b>Mónaco</b>";
         this.layout ="/assets/imagenes/monacoLayout.webp";
         this.abierto = false;
     }

@@ -3,7 +3,7 @@
     justify-content: center;
     flex-direction: column;
     width: 320px;
-    height: 420px;
+    height: 435px;
     background-color: rgba(0, 0, 0, 0);
     border-radius: 10px;
     margin-left: 0%;
@@ -30,7 +30,7 @@
 
 .media {
     position: absolute; 
-    height: 31.8%; 
+    height: 33%; 
     width: 60px; 
     background: linear-gradient(to top, rgb(172, 19, 98), rgba(171, 26, 101, 0.408));
     z-index: 2; 

@@ -28,21 +28,19 @@ export class SeleccionCircuitoComponent{
   }
 
   abrirCircuito(circuito: Circuito) {
-    // Si el circuito seleccionado es el mismo, no hace nada
+
     if (this.circuitoSeleccionado === circuito) {
       return;
     }
-    // Cierra cualquier otro circuito abierto
     this.circuitoSeleccionado = circuito;
-    this.circuitos.forEach(c => c.abierto = false); // Cierra todos
-    circuito.abierto = true; // Solo abre el circuito actual
+    this.circuitos.forEach(c => c.abierto = false); 
+    circuito.abierto = true; 
   }
 
-  // Función para cerrar el circuito seleccionado
   cerrarCircuito() {
     if (this.circuitoSeleccionado) {
-      this.circuitoSeleccionado.abierto = false; // Cierra el circuito
-      this.circuitoSeleccionado = null; // Resetea la selección
+      this.circuitoSeleccionado.abierto = false; 
+      this.circuitoSeleccionado = null; 
     }
   }
 
