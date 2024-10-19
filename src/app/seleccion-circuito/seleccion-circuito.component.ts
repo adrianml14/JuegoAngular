@@ -10,42 +10,40 @@ import { Circuito } from '../models/circuito.model';
 })
 
 
-export class SeleccionCircuitoComponent implements OnInit{
-
+export class SeleccionCircuitoComponent{
   
-  circuitoss: string[] = ["Malasia", "Japon", "Austria", "Belgica", "Barcelona", "Monaco"];
-  circuito: number=1;
-  circuitos: Circuito[] = [];
+  circuitos: Circuito[];
+  circuitoSeleccionado: Circuito | null = null;
 
-  getCircuito(): string {
-    return this.circuitoss[this.circuito];
+  constructor() {
+
+    this.circuitos = [
+      new Circuito(1),
+      new Circuito(2),
+      new Circuito(3),
+      new Circuito(4),
+      new Circuito(5),
+      new Circuito(6)
+    ];
   }
-  ngOnInit(): void{
-    for(let i=0; i<=6; i++){
-      this.circuitos[i -1]= new Circuito(i)
+
+  abrirCircuito(circuito: Circuito) {
+    // Si el circuito seleccionado es el mismo, no hace nada
+    if (this.circuitoSeleccionado === circuito) {
+      return;
+    }
+    // Cierra cualquier otro circuito abierto
+    this.circuitoSeleccionado = circuito;
+    this.circuitos.forEach(c => c.abierto = false); // Cierra todos
+    circuito.abierto = true; // Solo abre el circuito actual
+  }
+
+  // Función para cerrar el circuito seleccionado
+  cerrarCircuito() {
+    if (this.circuitoSeleccionado) {
+      this.circuitoSeleccionado.abierto = false; // Cierra el circuito
+      this.circuitoSeleccionado = null; // Resetea la selección
     }
   }
-/*
-  async elegir(){
-  
-    if(this.circuito<this.circuitos.length){
-      this.circuito++;
-    }
-    else{
-      this.circuito=1;
-    }
-    }
-  
 
-  async atras(){
-
-      if(this.circuito>1){
-        this.circuito--;
-      }
-      else{
-        this.circuito=this.circuitos.length;
-      }
-      }
-
-*/
 }

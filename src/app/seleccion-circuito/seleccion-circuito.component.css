@@ -45,14 +45,68 @@
   padding-top: 0%;
 }
 
-.informacion-circuito{
+.nombre-circuito{
   display: flex;
   justify-content: center;
   align-items: end;
   width: 100%;
-  height: 45%;
-  margin-top: 20%;
+  height: 15%;
+  margin-top: 34%;
   border-radius: 0 0 10px 10px;
-  background-color: rgba(172, 19, 98, 0.934);
+  background-color: rgb(172, 19, 98);
 }
 
+.informacion-circuito {
+  background-color: rgba(108, 5, 176, 0.2);
+  border-radius: 0 0 10px 10px;
+  padding: 10px;
+  color: white;
+  transition: max-height 0.3s ease; 
+}
+
+
+.circuito-detalle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  color: white;
+}
+
+.detalle-contenido {
+  background-color: rgba(172, 19, 98, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  text-align: center;
+}
+
+button {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: gray;
+}
+.layout{
+  background-size: cover;
+  height: 40%;
+  width: 100%;
+  border-radius: 10px;
+  flex-direction: row;
+  z-index: 1;
+  padding-top: 0%;
+}

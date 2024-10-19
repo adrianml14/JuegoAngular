@@ -1,13 +1,30 @@
 <div class="contenedor-circuitos">
-    <div class="carta-circuito" *ngFor="let circuito of circuitos">
-        <div class="foto-circuito">
-            <img [src]="circuito.imagen" class="icono">
-        </div>
-        <div class="informacion-circuito">
-            <h3 [innerHTML]="circuito.informacion"></h3> 
-        </div>
+
+    <!-- Tarjetas de circuito -->
+    <div class="carta-circuito" *ngFor="let circuito of circuitos" (click)="abrirCircuito(circuito)" 
+     [ngClass]="{'activo': circuito.abierto}">
+      <div class="foto-circuito">
+        <img [src]="circuito.imagen" class="icono">
+      </div>
+      <div class="nombre-circuito">
+        <h3 [innerHTML]="circuito.nombre"></h3>
+      </div>
+    </div>
+  
+    <div *ngIf="circuitoSeleccionado && circuitoSeleccionado.abierto" class="circuito-detalle">
+      <div class="detalle-contenido">
+        <h2 [innerHTML]="circuitoSeleccionado.nombre"></h2>
+        
+        <img [src]="circuitoSeleccionado.layout" class="layout">
+        
+        <p [innerHTML]="circuitoSeleccionado.informacion"></p>
+
+        <button (click)="cerrarCircuito()">Cerrar</button>
+      </div>
     </div>
 </div>
+
+  
 
 
 
