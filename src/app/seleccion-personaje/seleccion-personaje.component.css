@@ -1,3 +1,16 @@
+
+.viñeta{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 650px;
+    background-color: rgba(43, 208, 226, 0);
+    border-radius: 10px;
+    margin-left: 35%;
+    margin-top: 1%;
+}
+
 .personaje{
     display: flex;
     justify-content: center;
@@ -12,17 +25,6 @@
 
 }
 
-.viñeta{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 400px;
-    height: 650px;
-    background-color: rgba(43, 208, 226, 0);
-    border-radius: 10px;
-    margin-left: 35%;
-    margin-top: 1%;
-}
 .botones {
   display: flex;
   justify-content: space-between; 
@@ -86,45 +88,6 @@ button {
   left: 10px;
 }
 
-.fernando1 {
-  background-image: url("/assets/imagenes/minardi.jpg");
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  border-radius: 20px;
-}
-
-.fernando2 {
-  background-image: url("/assets/imagenes/renault.jpg");
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  border-radius: 20px;
-}
-
-.fernando3 {
-  background-image: url("/assets/imagenes/ferrari.jpg");
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  border-radius: 20px;
-}
-
-.fernando4 {
-  background-image: url("/assets/imagenes/mclaren.jpg");
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  border-radius: 20px;
-}
-
-.fernando5 {
-  background-image: url("/assets/imagenes/aston.jpg");
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  border-radius: 20px;
-}
   .num{
     font-size: 40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -132,3 +95,81 @@ button {
     height: 10px;
     margin-bottom: 35px;
   }
+
+/* tablet */
+@media screen and (max-width: 1024px) {
+  
+  .viñeta {
+    width: 350px;
+    height: 600px;
+    margin-left: 25%;
+    padding-top: 100px;
+  }
+
+.personaje {
+    width: 90%;
+    height: 60%;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .botones {
+    width: 100%;
+    justify-content: space-around;
+    padding-left: 10px;
+    padding-top: 90px;
+  }
+
+  button {
+    font-size: 25px;
+    padding: 12px;
+    width: 150px;
+  }
+  
+
+  .num {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+}
+
+/* moviles*/
+@media screen and (max-width: 768px) {
+
+
+.viñeta {
+  width: 300px;
+  height: 500px;
+  margin-left: 18%;
+  padding-top: 100px;
+}
+
+.personaje {
+  width: 95%;
+  height: 50%;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.botones {
+  width: 100%;
+  justify-content: space-around;
+  padding-left: 10px;
+  padding-top: 200px;
+  
+}
+
+button {
+  font-size: 25px;
+  padding: 12px;
+  width: 150px;
+}
+
+
+.num {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+}
+
+

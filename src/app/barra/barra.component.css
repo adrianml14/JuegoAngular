@@ -6,3 +6,15 @@
   margin: 30px;
   cursor: pointer;
 }
+
+/* Solo para móviles (hasta 768px) */
+@media screen and (max-width: 768px) {
+  .example-spacer {
+    flex: z 1 auto;
+  }
+
+  .navbar-option {
+    margin: 5px; /* Reducir el margen en móviles */
+    cursor: pointer;
+  }
+}

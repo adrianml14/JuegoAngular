@@ -1,6 +1,5 @@
 <div class="contenedor-circuitos">
 
-    <!-- Tarjetas de circuito -->
     <div class="carta-circuito" *ngFor="let circuito of circuitos" (click)="abrirCircuito(circuito)" 
      [ngClass]="{'activo': circuito.abierto}">
       <div class="foto-circuito">

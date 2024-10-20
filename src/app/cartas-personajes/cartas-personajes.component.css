@@ -32,7 +32,7 @@
     position: absolute; 
     height: 33%; 
     width: 60px; 
-    background: linear-gradient(to top, rgb(172, 19, 98), rgba(171, 26, 101, 0.408));
+    background: linear-gradient(to top, rgb(172, 19, 98), rgba(171, 26, 101, 0.197));
     z-index: 2; 
     padding: 0; 
     margin-top: 0;
