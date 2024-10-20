@@ -30,7 +30,7 @@
 
 .media {
     position: absolute; 
-    height: 33%; 
+    height: 36%; 
     width: 60px; 
     background: linear-gradient(to top, rgb(172, 19, 98), rgba(171, 26, 101, 0.197));
     z-index: 2; 
@@ -49,5 +49,25 @@
     margin-top: 20%;
     border-radius: 0 0 10px 10px;
     background-color: rgb(172, 19, 98);
+}
+
+@media screen and (max-width: 1024px) {
+    .media {
+        height: 36%; 
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .media {
+        height: 36%; 
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .media {
+        height: 36%; 
+    }
 }
 
